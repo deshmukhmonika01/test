@@ -1,1 +1,9 @@
-<p>mycomponent works!</p>
+<h2>My Cities</h2>
+<ul class="mycomponent">
+  <li *ngFor="let city of cities" >
+  <a routerLink="/detail/{{city.id}}">
+    <span class="badge">{{city.id}}</span> {{city.name}}
+  </a>
+  </li>
+</ul>
+

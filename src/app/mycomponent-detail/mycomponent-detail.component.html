@@ -1,1 +1,12 @@
-<p>mycomponent-detail works!</p>
+<div *ngIf="city">
+
+    <h2>{{city.name | uppercase}} Details</h2>
+    
+    <div><span>id: </span>{{city.id}}</div>
+    <div>
+      <label>Name:
+        <input [(ngModel)]="city.name" placeholder="name"/>
+      </label>
+    </div>
+    <button (click)="goBack()">go back</button>
+  </div>
