@@ -17,6 +17,6 @@ export class DashboardComponent implements OnInit {
   }
   getCities(): void {
     this.cityService.getCities()
-      .subscribe(cities => this.cities = cities.slice(1, 5));
+      .subscribe(data => this.cities = data.slice(1, 5));
   }
 }
